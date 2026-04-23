@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e7e2db;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 540px;
+  min-height: 610px;
+  border: 4px solid #111;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 22px 40px 40px;
+  box-sizing: border-box;
+}
+
+.login-title {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #111;
+  margin: 0 0 10px;
+}
+
+.login-brand {
+  font-family: "Great Vibes", cursive;
+  font-size: 7rem;
+  font-weight: 400;
+  color: #ff5fa2;
+  margin: 10px 0 50px;
+  line-height: 1;
+  text-align: center;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-group label {
+  font-size: 1.1rem;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.input-group input {
+  width: 100%;
+  height: 56px;
+  border: 2px solid #e4aaaa;
+  border-radius: 14px;
+  background-color: #f8dddd;
+  outline: none;
+  padding: 0 16px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input-group input:focus {
+  border-color: #ff7db3;
+  box-shadow: 0 0 0 3px rgba(255, 125, 179, 0.18);
+}
+
+.login-button {
+  margin-top: 10px;
+  height: 52px;
+  border: none;
+  border-radius: 14px;
+  background-color: #ff5fa2;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.login-button:hover {
+  opacity: 0.92;
+}
+
+.login-button:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    max-width: 460px;
+    min-height: auto;
+    padding: 20px 24px 32px;
+  }
+
+  .login-brand {
+    font-size: 5.5rem;
+    margin: 10px 0 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    border-width: 3px;
+    padding: 20px 18px 28px;
+  }
+
+  .login-title {
+    font-size: 1.6rem;
+  }
+
+  .login-brand {
+    font-size: 4.3rem;
+  }
+
+  .login-form {
+    max-width: 100%;
+  }
+}
