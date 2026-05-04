@@ -1,0 +1,112 @@
+.personalizacion-page {
+  min-height: 100vh;
+  display: flex;
+  background-color: #f2ede7;
+}
+
+.personalizacion-content {
+  flex: 1;
+  padding: 24px;
+}
+
+.personalizacion-panel {
+  background-color: #fffaf8;
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  max-width: 900px;
+}
+
+.personalizacion-panel h1 {
+  margin-bottom: 12px;
+}
+
+.personalizacion-panel p {
+  color: #555;
+  line-height: 1.5;
+}
+
+.personalizacion-form {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.personalizacion-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.personalizacion-field input,
+.personalizacion-field select {
+  border: 1px solid #dcb4bd;
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-size: 1rem;
+  background-color: #fff;
+}
+
+.recommendation-card {
+  background-color: #f9f1f3;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.recommendation-card h2 {
+  margin-bottom: 14px;
+}
+
+.recommendation-card h3 {
+  margin: 16px 0 10px;
+}
+
+.color-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.color-pill {
+  background-color: #ea7ea4;
+  color: white;
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: 0.95rem;
+}
+
+.color-pill.muted {
+  background-color: #c8aeb6;
+}
+
+.personalizacion-message {
+  font-weight: 600;
+  color: #9b4a68;
+}
+
+.personalizacion-button {
+  width: fit-content;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 18px;
+  background-color: #ea7ea4;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.personalizacion-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+@media (max-width: 700px) {
+  .personalizacion-page {
+    flex-direction: column;
+  }
+
+  .personalizacion-content {
+    padding: 20px;
+  }
+}

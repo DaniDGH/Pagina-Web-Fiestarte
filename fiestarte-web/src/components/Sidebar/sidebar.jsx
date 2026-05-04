@@ -41,7 +41,7 @@ function Sidebar() {
             <li onClick={() => navigate("/facturacion")}>Facturacion</li>
             <li onClick={() => navigate("/agenda")}>Agenda</li>
             <li onClick={() => navigate("/prendas")}>Prendas</li>
-            <li>Personalizacion</li>
+            <li onClick={() => navigate("/personalizacion")}>Personalizacion</li>
           </ul>
         </nav>
       </div>

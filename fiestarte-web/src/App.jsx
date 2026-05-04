@@ -5,6 +5,7 @@ import Billing from "./components/pages/Billing/Billing";
 import Agenda from "./components/pages/Agenda/Agenda";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Inventory from "./components/pages/Inventory/Inventory";
+import Personalizacion from "./components/pages/Personalizacion/Personalizacion";
 
 function App() {
   return (
@@ -39,6 +40,14 @@ function App() {
   element={
     <ProtectedRoute>
       <Inventory />
+    </ProtectedRoute>
+  }
+/>
+<Route
+  path="/personalizacion"
+  element={
+    <ProtectedRoute>
+      <Personalizacion />
     </ProtectedRoute>
   }
 />

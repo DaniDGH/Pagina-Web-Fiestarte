@@ -5,29 +5,28 @@ import "./Home.css";
 function Home() {
   const navigate = useNavigate();
 
-  const modules = [
-    {
-      title: "Facturacion",
-      description: "Crea facturas, registra ventas o alquileres y genera PDF.",
-      path: "/facturacion",
-    },
-    {
-      title: "Agenda",
-      description: "Consulta eventos, revisa notas y actualiza estados.",
-      path: "/agenda",
-    },
-    {
-      title: "Prendas",
-      description: "Administra el inventario de vestidos, trajes y accesorios.",
-      path: "/prendas",
-    },
-    {
-      title: "Personalizacion",
-      description: "Configura opciones visuales y ajustes del sistema.",
-      path: "/personalizacion",
-      disabled: true,
-    },
-  ];
+ const modules = [
+  {
+    title: "Facturacion",
+    description: "Crea facturas, registra ventas o alquileres y genera PDF.",
+    path: "/facturacion",
+  },
+  {
+    title: "Agenda",
+    description: "Consulta eventos, revisa notas y actualiza estados.",
+    path: "/agenda",
+  },
+  {
+    title: "Prendas",
+    description: "Administra el inventario de vestidos y accesorios.",
+    path: "/prendas",
+  },
+  {
+    title: "Personalizacion",
+    description: "Asistente de colorimetría para sugerir colores según tono de piel.",
+    path: "/personalizacion",
+  },
+];
 
   return (
     <div className="home-page">
